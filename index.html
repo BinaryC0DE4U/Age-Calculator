@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="icon" href="Calender.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome CDN -->
+  <style>
+    /* Styling for the Connect With Me section */
+    .connect-with-me {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .connect-with-me h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .connect-with-me p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* Responsive Social Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      padding-bottom: 20px; /* Added padding at the bottom */
+    }
+
+    .social-icon {
+      font-size: 1.5rem;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: #0073b1; /* LinkedIn blue or any hover color */
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- Main Content -->
+  <div id="main-content">
+    <header class="header">
+      <div class="logo-container">
+        <img src="DJPATIL031.png" alt="Logo" class="logo">
+        <div>
+          <h1 class="logo-text">BinaryBrains</h1>
+          <p class="logo-subtext">Brains That Think in Binary</p>
+        </div>
+      </div>
+      <!-- Toggle Button with Emoji -->
+      <button class="toggle-btn" onclick="toggleMode()">
+        🌞 <!-- Sun emoji for Light Mode by default -->
+      </button>
+    </header>
+
+    <div class="container">
+      <h2>Age Calculator </h2>
+      <input type="date" id="dateInput">
+      <button onclick="showDate()">Show My Age</button>
+      <div id="output"></div>
+    </div>
+
+    <!-- To Connect With Me Section -->
+    <div class="connect-with-me">
+      <h3>To Connect With Me</h3>
+      <p>If you'd like to get in touch, feel free to follow me on social media!</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/mr-dhananjay-patil-0172902a2/" target="_blank" class="social-icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://github.com/BinaryC0DE4U" target="_blank" class="social-icon github">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
